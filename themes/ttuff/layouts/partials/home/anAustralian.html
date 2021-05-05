@@ -1,0 +1,23 @@
+{{ with .Site.Params.anAustralian}}
+{{ if .enable }}
+{{ "<!-- Site Connect Digitize -->" | safeHTML }}
+
+<div class="container text-center ">
+    <h3 class=" mt-14 ">{{.australianheading}}</h3>
+     
+    <p class=" p-4  md:pl-10 pr-10">{{.australianpara}}
+       
+       <div>
+          <button class=" bg-gradient-to-r from-yellow-400 to-yellow-600 text-white  hover:text-gray-600 m-4 rounded px-5 py-2  outline-none focus">{{.button1}}</button></div>
+        
+        <div class="mt-10 mb-8 flex w-full h-full pl-10 md:pl-36">
+           <iframe 
+            src="https://www.youtube.com/embed/HQo70opmoZQ?enablejsapi=1&amp;rel=0" width="90%"
+            height="550" frameborder="0"></iframe>
+      
+        
+       </div>
+</div>
+{{ "<!-- Site Hero End -->" | safeHTML }}
+{{ end }}
+{{ end }}

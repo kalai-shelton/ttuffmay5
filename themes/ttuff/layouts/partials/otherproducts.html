@@ -1,0 +1,48 @@
+{{ with .Site.Params.ourProducts}}
+{{ if .enable }}
+{{ "<!-- Site Connect Digitize -->" | safeHTML }}
+<div class= "bg-gray-50">
+<div class="container  text-center  py-10 pb-24">
+    <h3 class="pb-2">Our other Products</h3>
+    
+    <p class="pb-9">{{.productspara}}</p>
+       
+      
+    <div>
+        <div class="flex flex-col gap-y-8 sm:ml-14 md:ml-0 lg:ml-0 md:flex-row gap-x-8">
+            <div class="relative  mb-10" style="width:300px; height:200px">
+                <img src="/images/home-page/TENTUFF-FRENCH-SECURITY-DOORS-CLOSEUP-LR.jpg"
+                    class="foto w-full h-full object-cover  shadow-md"
+                    alt="description" />
+                    <h4 class="">Security Doors</h4>
+        <a href="/securitydoors/" class="">More Info.. </a>
+            </div>
+            <div class=" relative  mb-8" style="width:300px; height:200px">
+                <img src="/images/home-page/TENTUFF-Security-windows-homepg.png"
+                    class="foto w-full h-full object-cover  shadow-md "
+                    alt="description" />
+                    <h4 >Security Windows</h4>
+        <a href="/securityWindows/" class="">More Info.. </a>
+            </div>
+<div class=" relative mb-8" style="width:300px; height:200px">
+                <img src="/images/home-page/TENTUFF-PATIO-COVER.jpg"
+                    class="foto w-full h-full object-cover  shadow-md"
+                    alt="description" />
+                    <h4> Patio Enclosure</h4>
+        <a href="/patio/" class="">More Info.. </a>
+            </div>
+
+            <div class=" relative mb-8" style="width:300px; height:200px">
+                <img src="/images/home-page/TENTUFF-Escape-windows-homepg.png"
+                    class="foto w-full h-full object-cover  shadow-md"
+                    alt="description" />
+                    <h4>Escape Enclosure</h4>
+        <a href="/escape/" class="">More Info.. </a>
+            </div>
+        </div> 
+    </div>
+</div>
+</div>
+{{ "<!-- Site Hero End -->" | safeHTML }}
+{{ end }}
+{{ end }}

@@ -1,0 +1,31 @@
+{{ with .Site.Params.testimonal}}
+{{ if .enable }}
+{{ "<!-- Site Connect Digitize -->" | safeHTML }}
+<div class="bg-gray-50  mt-6 ">
+<div class="container lg:px-60 md:pb-24">
+    <h3 class="pt-10 text-center">{{.thead}}</h3>
+    <div class="lg:pl-40 ">
+   <blockquote class="testimonial"><p ><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 32 32">
+        <title>quotes-left</title>
+        <path d="M7.031 14c3.866 0 7 3.134 7 7s-3.134 7-7 7-7-3.134-7-7l-0.031-1c0-7.732 6.268-14 14-14v4c-2.671 0-5.182 1.040-7.071 2.929-0.364 0.364-0.695 0.751-0.995 1.157 0.357-0.056 0.724-0.086 1.097-0.086zM25.031 14c3.866 0 7 3.134 7 7s-3.134 7-7 7-7-3.134-7-7l-0.031-1c0-7.732 6.268-14 14-14v4c-2.671 0-5.182 1.040-7.071 2.929-0.364 0.364-0.695 0.751-0.995 1.157 0.358-0.056 0.724-0.086 1.097-0.086z"></path>
+        </svg> {{.tPara}}</p>
+    </blockquote>
+</div>
+        <div class="grid lg:grid-cols-2 gap-3 mt-10  md:gap-10">
+    <div class="lg:pl-6 ml-0 sm:pl-0 md:ml-10 sm:ml-0 lg:ml-0">
+       <img class="lg:pl-32 md:pl-4 pb-10"src="/images/home-page/testimonial-customer.png">
+    </div>  
+        <div class="lg:-ml-28 lg:pt-0 md: md:pl-20 pl-32 sm:pl-0 sm:pt-0">
+            <p class=" lg:p-0 pr-10">{{.tPara1}}</p>
+            <svg class="mt-5" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#cc6f04" viewBox="0 0 20 20">
+                
+                <path d="M10 2.3c-9.828 0-10 0.874-10 7.7s0.172 7.7 10 7.7 10-0.874 10-7.7-0.172-7.7-10-7.7zM13.205 10.334l-4.49 2.096c-0.393 0.182-0.715-0.022-0.715-0.456v-3.948c0-0.433 0.322-0.638 0.715-0.456l4.49 2.096c0.393 0.184 0.393 0.484 0 0.668z"></path>
+            </svg> <span class="pl-10"><a href="https://youtu.be/MutdRITttHo">Watch on Youtube</a></span>
+                 
+        </div>
+       </div>
+    </div>
+</div>
+{{ "<!-- Site Hero End -->" | safeHTML }}
+{{ end }}
+{{ end }}
